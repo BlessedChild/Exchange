@@ -1,0 +1,7 @@
+.DS_Store
+
+Server/.DS_Store
+Server/node_modules/.DS_Store
+Server/middleware/.DS_Store
+
+Client/.DS_Store
