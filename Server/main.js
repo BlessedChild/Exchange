@@ -2,7 +2,7 @@ var express = require('express')
 var app = express()
 
 // import grobal config parameter
-import config from './config.js/index.js';
+import config from './config.js';
 
 // import middleware to log
 var log = require('./middleware/log.js')
