@@ -1,14 +1,16 @@
 var express = require('express')
 var app = express()
 
+// import grobal config parameter
+const config = import('./config.json')
+
+// import middleware to log
 var log = require('./middleware/log.js')
 
 app.use(log())
 
-app.get('/', function (req, res) {
-  var responseText = 'Hello World!<br>'
-  responseText += '<small>Requested at: ' + req.requestTime + '</small>'
-  res.send(responseText)
+app.get('/', (req, res) => {
+  res.send({"result_status": true})
 })
 
-app.listen(80)
+app.listen(config.Port)
