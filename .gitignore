@@ -4,4 +4,6 @@ Server/.DS_Store
 Server/node_modules/.DS_Store
 Server/middleware/.DS_Store
 
+Server/node_modules/
+
 Client/.DS_Store
