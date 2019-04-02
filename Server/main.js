@@ -16,7 +16,7 @@ var log = require('arthurslog-log');
 app.use(log());
 
 app.get('/', function (req, res) {
-    res.render('index', { title: 'Hey', message: 'Hello there!' });
+    res.render('index', { title: 'slog-engine', message: 'Hello~ This is a HTML rendering temeplate named "slog-engine" from ArthurSlog(www.arthurslog.com)!' });
 })
 
 if(config.Mode == "online"){
